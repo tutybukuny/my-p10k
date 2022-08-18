@@ -132,6 +132,12 @@ alias gmtl="git mergetool"
 
 alias ipython="python3 -m IPython"
 
+alias nhc="npx hardhat compile"
+alias nht="npx hardhat test"
+alias nhv="npx hardhat verify --network"
+alias nhea="npx hardhat export-abi"
+alias nhcl="npx hardhat clean"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/p10k-tony-lambiris.zsh
