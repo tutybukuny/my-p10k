@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting git docker docker-compose)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting git docker docker-compose kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -137,6 +137,14 @@ alias nht="npx hardhat test"
 alias nhv="npx hardhat verify --network"
 alias nhea="npx hardhat export-abi"
 alias nhcl="npx hardhat clean"
+
+alias k="kubectl"
+alias kgp="k get pod"
+alias kgn="k get namespace"
+alias ke="k exec -it"
+alias kl="k logs -f"
+alias kc="k config set-context"
+alias kubens="k config set-context --current --namespace"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
