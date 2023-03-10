@@ -108,10 +108,13 @@ export PATH=$PATH:/usr/local/go/bin:~/go/bin
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias tmux="tmux -2"
+
 alias dps="docker ps"
 alias dl="docker logs -f"
 alias dlt="docker logs -f --tail"
 alias de="docker exec -it"
+alias dc="docker compose"
 
 alias g="git"
 alias gpl="git pull"
@@ -145,6 +148,8 @@ alias ke="k exec -it"
 alias kl="k logs -f"
 alias kc="k config set-context"
 alias kubens="k config set-context --current --namespace"
+
+alias nvitop="python3 -m nvitop"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
